@@ -85,9 +85,10 @@
           const ad = {
             title: this.title,
             description: this.description,
-            promo: this.promo
+            promo: this.promo,
+            imageSrc: 'https://s3.amazonaws.com/coursetro/posts/134-full.png'
           }
-          console.log(ad)
+          this.$store.dispatch('createAd', ad)
         }
       }
     }
